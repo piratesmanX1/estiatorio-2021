@@ -1,0 +1,101 @@
+.ProfileContent {
+    min-height: 100vh;
+    padding: 60px 30px;
+}
+
+.ProfileContent .image-container img {
+    cursor: unset;
+}
+
+.ProfileContent .image-container:hover img {
+    opacity: 1;
+}
+
+.ProfileContent .image-container:after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    text-align: center;
+    color: #000;
+    top: 35%;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    cursor: none;
+}
+
+.ProfileContent .image-container.editable img {
+    cursor: pointer;
+}
+
+.ProfileContent .image-container.editable:hover img {
+    opacity: 0.3;
+}
+
+.ProfileContent .image-container.editable:after {
+    content: "Upload Profile Image here";
+    cursor: pointer;
+}
+
+.ProfileContent .image-container.editable:hover::after {
+    opacity: 1;
+}
+
+.ProfileContent .MuiCardActions-spacing a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.account-status-dialog button,
+.account-logout-dialog button {
+    background-color: unset!important;
+}
+
+.ProfileContent .MuiInputs {
+    margin-top: 16px;
+}
+
+.ProfileContent .MuiInputs input{
+    border-style: unset!important;
+    background-color: transparent!important;
+    padding: 6px 0 7px!important;
+    box-sizing: unset!important;
+    border-width: unset!important;
+}
+
+/* making the list-items as a horizontal list when met a specific aspect ratio */
+@media screen and (max-width: 959px) {
+    .ProfileContent .profile-list {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+    }
+    .ProfileContent .profile-list-container {
+        padding-right: unset;
+        padding-left: unset;
+    }
+}
+@media screen and (max-width: 941px) {
+    .ProfileContent .profile-list {
+        overflow: auto;
+    }
+    .ProfileContent .profile-list::-webkit-scrollbar {
+        height: 0px;
+    }
+    .ProfileContent .profile-list::selection {
+        background: revert;
+        color: #000;
+    }
+    .ProfileContent .profile-list::-webkit-scrollbar-thumb {
+        background: revert;
+        border-radius: 6px;
+    }
+    .ProfileContent .profile-list .MuiListItem-button {
+        min-width: 173px;
+    }
+}
+@media screen and (max-width: 364px) {
+    .ProfileContent .edit-icon-btn {
+        top: 48px;
+    }
+}
+

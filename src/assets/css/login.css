@@ -1,0 +1,174 @@
+.LoginContent .MuiInputBase-input.MuiInput-input,
+.RegistrationContent .MuiInputBase-input.MuiInput-input {
+    font: inherit;
+    color: currentColor;
+    border: 0;
+    height: 1.1876em;
+    margin: 0;
+    display: block;
+    padding: 6px 0 7px;
+    min-width: 0;
+    background: none;
+    box-sizing: content-box;
+    animation-name: mui-auto-fill-cancel;
+    letter-spacing: inherit;
+    animation-duration: 10ms;
+    -webkit-tap-highlight-color: transparent;
+    border-radius: unset;
+    outline: unset;
+    border-color: unset;
+}
+
+.login-form {
+    padding: 40px 60px;
+    /* height: 100%; */
+    display: flex;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background: white;
+    box-shadow: -3px -1px 7px -3px rgba(0,0,0,0.75);
+}
+
+.RegistrationContent .login-form {
+    box-shadow: 3px -1px 7px -3px rgba(0,0,0,0.75);
+    min-height: 1250px;
+}
+
+.LoginContent .login-form .MuiFormControl-root,
+.RegistrationContent .login-form .MuiFormControl-root {
+    margin-bottom: 5px;
+}
+
+.login-form .reset-pw-link {
+    margin-bottom: 10px;
+    margin-top: 5px;
+    text-align: left;
+}
+
+.login-form .elementor-button-link.elementor-button.elementor-size-sm {
+    width: 100%;
+}
+
+.LoginContent .register-link {
+    position: absolute;
+    bottom: 40px;
+    right: 60px;
+    font-size: 18px;
+}
+
+.RegistrationContent .login-link {
+    position: absolute;
+    bottom: 40px;
+    font-size: 18px;
+    left: 60px;
+}
+
+.LoginContent .register-link a,
+.RegistrationContent .login-link a {
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.register-dob .MuiButtonBase-root {
+    font-size: unset;
+    text-transform: unset;
+    color: unset;
+    background-color: unset!important;
+    border-radius: unset;
+    padding: unset;
+}
+
+.MuiPickersBasePicker-container button {
+    padding: unset;
+    background-color: unset;
+}
+
+.MuiPickersDay-daySelected {
+    background-color: #FFE500;
+}
+
+.MuiPickersDatePickerRoot-toolbar * {
+    background-color: unset!important;
+    text-transform: capitalize;
+}
+
+.RegistrationContent #demo-simple-select-label {
+    padding-top: 15.5px;
+}
+
+.RegistrationContent .login-form .elementor-button-link {
+    margin-top: 20px;
+}
+
+.RegistrationContent .reg-account-role {
+    text-align: left;
+}
+
+.ResetPwContent .MuiInputs {
+    margin-top: 10px;
+}
+
+.ResetPwContent .MuiInputs input {
+    border-style: unset!important;
+    background-color: transparent!important;
+    padding: 6px 0 7px!important;
+    box-sizing: unset!important;
+    border-width: unset!important;
+}
+
+.ResetPwContent .link-container {
+    font-size: 18px;
+    position: absolute;
+    bottom: 60px;
+}
+
+.ResetPwContent .link-container a {
+    text-decoration: none;
+}
+
+.ResetPwContent .rest-pw-content {
+    position: relative;
+    box-shadow: 10px 10px 34px 0px rgba(0,0,0,0.75);
+}
+
+.ResetPwContent .login-link {
+    right: 32px;
+}
+
+.ResetPwContent .register-link {
+    padding: 10px 32px;
+}
+
+.ResetPwContent .register-link input {
+    width: 100%;
+}
+
+@media screen and (max-width: 1440px) {
+    .ResetPwContent main {
+        height: 125vh;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .login-form {
+        padding: 0 30px;
+        text-align: center;
+    }
+    .LoginContent .register-link {
+        right: 30px;
+    }
+    .RegistrationContent .login-link {
+        left: 30px;
+    }
+    .login-banner {
+        background-image: url("../image/B06.jpg");
+        background-repeat: no-repeat;
+        background-color: grey;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+}

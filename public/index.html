@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="/" /> <!-- for local host -->
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open%20Sans%3A400%7CMarcellus%3A400%7CMerriweather%3A300%2C300i%7CMarcellus%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMerriweather%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CNoto%20Serif%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%3A400%2C300%7CMarcellus%3A400%7CMerriweather%3A300&amp;subset=" />
+    <meta name='robots' content='max-image-preview:large' />
+    <link rel="dns-prefetch" href="http://fonts.googleapis.com/">
+    <link rel="dns-prefetch" href="http://s.w.org/">
+    <link rel="preload" href="https://demo2wpopal.b-cdn.net/rominal/wp-content/themes/rominal/assets/fonts/icons/rominal-icon-1.0.1.woff2" as="font" crossorigin>
+    
+    <link rel='dns-prefetch' href='http://demo2.wpopal.com/' />
+    <link rel='dns-prefetch' href='http://maps.googleapis.com/' />
+    <link rel='dns-prefetch' href='http://demo2wpopal.b-cdn.net/' />
+    <link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
+    <link rel="alternate" type="application/rss+xml" title="Rominal &raquo; Feed" href="https://demo2.wpopal.com/rominal/feed/" />
+    <link rel="alternate" type="application/rss+xml" title="Rominal &raquo; Comments Feed" href="https://demo2.wpopal.com/rominal/comments/feed/" />
+    <link data-minify="1" rel='stylesheet' id='awesome-weather-css' href='./assets/template/rominal-template/demo2wpopal.b-cdn.net/rominal/wp-content/cache/min/1/rominal/wp-content/plugins/awesome-weather/awesome-weather-9053c5b50fd89ca959c0dea16dc564e7.css' media='all' />
+    <style id='awesome-weather-inline-css'>
+    .awesome-weather-wrap {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 14px;
+    }
+    </style>
+    <link rel='stylesheet' id='babe-ion-rangeslider-css-css' href='./assets/template/rominal-template/demo2wpopal.b-cdn.net/rominal/wp-content/plugins/ba-book-everything/js/ion.rangeSlider/ion.rangeSlider.min6d33.css?ver=1.3.33' media='all' />
+    <link data-minify="1" rel='stylesheet' id='babe-daterangepicker-style-css' href='./assets/template/rominal-template/demo2wpopal.b-cdn.net/rominal/wp-content/cache/min/1/rominal/wp-content/plugins/ba-book-everything/css/daterangepicker-7e7c8bfba41b573e56a38ea32ac9987d.css' media='all' />
+    <link rel='stylesheet' id='babe-select2-style-css' href='./assets/template/rominal-template/demo2wpopal.b-cdn.net/rominal/wp-content/plugins/ba-book-everything/css/select2.min6d33.css?ver=1.3.33' media='all' />
+    <link data-minify="1" rel='stylesheet' id='babe-modal-style-css' href='./assets/template/rominal-template/demo2wpopal.b-cdn.net/rominal/wp-content/cache/min/1/rominal/wp-content/plugins/ba-book-everything/css/babe-modal-486e2b1053d780175ec37d8af74746dc.css' media='all' />
+    <link rel='stylesheet' id='jquery-ui-style-css' href='./assets/template/rominal-template/demo2wpopal.b-cdn.net/rominal/wp-content/plugins/ba-book-everything/css/jquery-ui.min35d0.css?ver=1.12.1' media='all' />
+    <link data-minify="1" rel='stylesheet' id='-css' href='./assets/template/rominal-template/demo2wpopal.b-cdn.net/rominal/wp-content/cache/min/1/rominal/wp-content/plugins/opal-demo/style-3420ef61bd7e40ca53b743012d41fdb1.css' media='all' />
+    <link data-minify="1" rel='stylesheet' id='rs-plugin-settings-css' href='./assets/template/rominal-template/demo2wpopal.b-cdn.net/rominal/wp-content/cache/min/1/rominal/wp-content/plugins/revslider/public/assets/css/rs6-b3a5f5aa49e38d39c3dcc4a09321c1ff.css' media='all' />
+    <style id='rs-plugin-settings-inline-css'>
+    #rs-demo-id {}
+    </style>
+    <link data-minify="1" rel='stylesheet' id='rominal-style-css' href='./assets/template/rominal-template/demo2wpopal.b-cdn.net/rominal/wp-content/cache/min/1/rominal/wp-content/themes/rominal/style-987f0d3d34490fe48d7f7f71b076a32d.css' media='all' />
+    <style id='rominal-style-inline-css'>
+    body {
+      --primary: #ffe500;
+      --primary_hover: #FFD800;
+      --text: #666666;
+      --accent: #000000;
+      --lighter: #888888;
+      --border: #e5e5e5;
+    }
+    </style>
+    <link rel='stylesheet' id='elementor-frontend-css' href='./assets/template/rominal-template/demo2wpopal.b-cdn.net/rominal/wp-content/plugins/elementor/assets/css/frontend.mine5ca.css?ver=3.2.3' media='all' />
+    <style id='elementor-frontend-inline-css'>
+    @font-face {
+      font-family: eicons;
+      src: url(https://demo2wpopal.b-cdn.net/rominal/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.eot?5.10.0);
+      src: url(https://demo2wpopal.b-cdn.net/rominal/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.eot?5.10.0) format("embedded-opentype"), url(https://demo2wpopal.b-cdn.net/rominal/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff2?5.10.0) format("woff2"), url(https://demo2wpopal.b-cdn.net/rominal/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff?5.10.0) format("woff"), url(https://demo2wpopal.b-cdn.net/rominal/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.ttf?5.10.0) format("truetype"), url(https://demo2wpopal.b-cdn.net/rominal/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.svg?5.10.0) format("svg");
+      font-weight: 400;
+      font-style: normal
+    }
+    </style>
+    <link data-minify="1" rel='stylesheet' id='elementor-post-4-css' href='./assets/template/rominal-template/demo2wpopal.b-cdn.net/rominal/wp-content/cache/min/1/rominal/wp-content/uploads/elementor/css/post-4-91fc61352612ed369a9b009b900b544d.css' media='all' />
+    <link data-minify="1" rel='stylesheet' id='magnific-popup-css' href='./assets/template/rominal-template/demo2wpopal.b-cdn.net/rominal/wp-content/cache/min/1/rominal/wp-content/themes/rominal/assets/css/libs/magnific-popup-e15e547a08f0c29245b74dfeb538acee.css' media='all' />
+    <link rel='stylesheet' id='tooltipster-css' href='./assets/template/rominal-template/demo2wpopal.b-cdn.net/rominal/wp-content/themes/rominal/assets/css/libs/tooltipster.bundle.minf269.css?ver=1.0.1' media='all' />
+    <link rel='stylesheet' id='elementor-icons-css' href='./assets/template/rominal-template/demo2wpopal.b-cdn.net/rominal/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min21f9.css?ver=5.11.0' media='all' />
+    <link rel='stylesheet' id='elementor-animations-css' href='./assets/template/rominal-template/demo2wpopal.b-cdn.net/rominal/wp-content/plugins/elementor/assets/lib/animations/animations.mine5ca.css?ver=3.2.3' media='all' />
+    <link rel='stylesheet' id='elementor-pro-css' href='./assets/template/rominal-template/demo2wpopal.b-cdn.net/rominal/wp-content/plugins/elementor-pro/assets/css/frontend.minee9a.css?ver=3.2.2' media='all' />
+    <link rel='stylesheet' id='font-awesome-5-all-css' href='./assets/template/rominal-template/demo2wpopal.b-cdn.net/rominal/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.mine5ca.css?ver=3.2.3' media='all' />
+    <link rel='stylesheet' id='font-awesome-4-shim-css' href='./assets/template/rominal-template/demo2wpopal.b-cdn.net/rominal/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.mine5ca.css?ver=3.2.3' media='all' />
+    <link data-minify="1" rel='stylesheet' id='elementor-global-css' href='./assets/template/rominal-template/demo2wpopal.b-cdn.net/rominal/wp-content/cache/min/1/rominal/wp-content/uploads/elementor/css/global-1d97641d82b34144c94f765a3a8b49df.css' media='all' />
+    <link data-minify="1" rel='stylesheet' id='elementor-post-14-css' href='./assets/template/rominal-template/demo2wpopal.b-cdn.net/rominal/wp-content/cache/min/1/rominal/wp-content/uploads/elementor/css/post-14-12a112dad9e9ea90cd159192e36b8906.css' media='all' />
+    <link data-minify="1" rel='stylesheet' id='babe-admin-elementor-style-css' href='./assets/template/rominal-template/demo2wpopal.b-cdn.net/rominal/wp-content/cache/min/1/rominal/wp-content/plugins/ba-book-everything/css/admin/babe-admin-elementor-82241d35fd8a815584858a40e12897f0.css' media='all' />
+    <link data-minify="1" rel='stylesheet' id='elementor-post-3655-css' href='./assets/template/rominal-template/demo2wpopal.b-cdn.net/rominal/wp-content/cache/min/1/rominal/wp-content/uploads/elementor/css/post-3655-86b46e81317f7503f83e09f8707ae1fc.css' media='all' />
+    <link data-minify="1" rel='stylesheet' id='elementor-post-676-css' href='./assets/template/rominal-template/demo2wpopal.b-cdn.net/rominal/wp-content/cache/min/1/rominal/wp-content/uploads/elementor/css/post-676-521f1c58a8ea81a3806ba1ba73db222a.css' media='all' />
+    <link data-minify="1" rel='stylesheet' id='rominal-elementor-css' href='./assets/template/rominal-template/demo2wpopal.b-cdn.net/rominal/wp-content/cache/min/1/rominal/wp-content/themes/rominal/assets/css/base/elementor-58628732951896c52f0a3a7e23264fc9.css' media='all' />
+    <link rel='stylesheet' id='rominal-child-style-css' href='./assets/template/rominal-template/demo2wpopal.b-cdn.net/rominal/wp-content/themes/demo-child/style8a54.css?ver=1.0.0' media='all' />
+    <link rel='stylesheet' id='elementor-icons-shared-0-css' href='./assets/template/rominal-template/demo2wpopal.b-cdn.net/rominal/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min9e0b.css?ver=5.15.1' media='all' />
+    <link rel='stylesheet' id='elementor-icons-fa-solid-css' href='./assets/template/rominal-template/demo2wpopal.b-cdn.net/rominal/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min9e0b.css?ver=5.15.1' media='all' />
+    <link rel='stylesheet' id='elementor-icons-fa-brands-css' href='./assets/template/rominal-template/demo2wpopal.b-cdn.net/rominal/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.min9e0b.css?ver=5.15.1' media='all' />
+    <link rel="https://api.w.org/" href="https://demo2.wpopal.com/rominal/wp-json/" />
+    <link rel="alternate" type="application/json" href="https://demo2.wpopal.com/rominal/wp-json/wp/v2/pages/14" />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://demo2.wpopal.com/rominal/xmlrpc.php?rsd" />
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://demo2.wpopal.com/rominal/wp-includes/wlwmanifest.xml" />
+    <link rel="canonical" href="index.html" />
+    <link rel='shortlink' href='https://demo2.wpopal.com/rominal/?p=14' />
+    <link rel="stylesheet" href="../src/assets/css/default.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+    <title> Home | Estiatorio </title>
+  </head>
+  <body class="page-template page-template-template-homepage page-template-template-homepage-php page page-id-14 wp-custom-logo wp-embed-responsive home chrome no-wc-breadcrumb elementor-default elementor-kit-4 elementor-page elementor-page-14">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="page" class="hfeed site">
+      <div id="root">
+        <div className="loader-container">
+          <div className="loader">
+            <svg className="tea" width="37" height="48" viewbox="0 0 37 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M27.0819 17H3.02508C1.91076 17 1.01376 17.9059 1.0485 19.0197C1.15761 22.5177 1.49703 29.7374 2.5 34C4.07125 40.6778 7.18553 44.8868 8.44856 46.3845C8.79051 46.79 9.29799 47 9.82843 47H20.0218C20.639 47 21.2193 46.7159 21.5659 46.2052C22.6765 44.5687 25.2312 40.4282 27.5 34C28.9757 29.8188 29.084 22.4043 29.0441 18.9156C29.0319 17.8436 28.1539 17 27.0819 17Z" stroke="var(--secondary)" stroke-width="2"></path>
+                <path d="M29 23.5C29 23.5 34.5 20.5 35.5 25.4999C36.0986 28.4926 34.2033 31.5383 32 32.8713C29.4555 34.4108 28 34 28 34" stroke="var(--secondary)" stroke-width="2"></path>
+                <path id="teabag" fill="var(--secondary)" fill-rule="evenodd" clip-rule="evenodd" d="M16 25V17H14V25H12C10.3431 25 9 26.3431 9 28V34C9 35.6569 10.3431 37 12 37H18C19.6569 37 21 35.6569 21 34V28C21 26.3431 19.6569 25 18 25H16ZM11 28C11 27.4477 11.4477 27 12 27H18C18.5523 27 19 27.4477 19 28V34C19 34.5523 18.5523 35 18 35H12C11.4477 35 11 34.5523 11 34V28Z"></path>
+                <path id="steamL" d="M17 1C17 1 17 4.5 14 6.5C11 8.5 11 12 11 12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="var(--secondary)"></path>
+                <path id="steamR" d="M21 6C21 6 21 8.22727 19 9.5C17 10.7727 17 13 17 13" stroke="var(--secondary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>

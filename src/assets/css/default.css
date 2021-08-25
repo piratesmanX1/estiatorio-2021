@@ -1,0 +1,567 @@
+html {
+    overflow-wrap: break-word;
+    hyphens: auto;
+    scroll-behavior: smooth;
+    font-family: marcellus,Sans-serif;
+}
+
+#page.loaded {
+    -webkit-animation: fadein 0.3s ease-in;
+    -moz-animation: fadein 0.3s ease-in;
+    animation: fadein 0.3s ease-in;
+}
+
+::selection {
+    background: #ffe500;
+    color: #000;
+}
+
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, #ffe500);
+    border-radius: 6px;
+}
+
+.default-button {
+    font-size: 14px;
+    font-family: marcellus,Sans-serif;
+    font-weight: 500;
+    letter-spacing: 1.4px;
+    color: var(--e-global-color-accent);
+    background-color: var(--e-global-color-primary);
+    border-color: var(--e-global-color-primary);
+    border: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border-radius: 0 0 0 0;
+    padding: 18px 38px;
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: 1;
+    text-align: center;
+}
+
+#navbar.removed {
+    display: none;
+}
+
+#contact.removed {
+    display: none;
+}
+
+.estiatorio-nav.hidden #estiatorio-header {
+    display: none;
+}
+
+#contact.hidden .elementor-section.elementor-top-section.elementor-element.elementor-element-ee19c57.elementor-section-stretched.elementor-section-boxed.elementor-section-height-default.elementor-section-height-default {
+    display: none;
+}
+
+.error-page-btn {
+    color: #000!important;
+    text-decoration: none!important;
+    width: 280px!important;
+    margin-right: auto!important;
+    margin-left: auto!important;
+}
+
+.default-button:hover {
+    background-color: #FFD800;
+}
+
+.loader-container {
+    transition: all 0.3s ease-in-out;
+    -webkit-animation: fadein 0.3s ease-in;
+    -moz-animation: fadein 0.3s ease-in;
+    animation: fadein 0.3s ease-in;
+}
+
+.loader-container.loaded {
+    opacity: 0;
+}
+
+.loader {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+svg.tea {
+    margin-right: auto;
+    margin-left: auto;
+    --secondary: #33406f;
+    transition: all 0.3s ease-in-out;
+}
+svg.tea #teabag {
+    transform-origin: top center;
+    transform: rotate(3deg);
+    animation: swing 2s infinite;
+}
+svg.tea #steamL {
+    stroke-dasharray: 13;
+    stroke-dashoffset: 13;
+    animation: steamLarge 2s infinite;
+}
+svg.tea #steamR {
+    stroke-dasharray: 9;
+    stroke-dashoffset: 9;
+    animation: steamSmall 2s infinite;
+}
+
+#estiatorio-header.inverted {
+    background-color: #000;
+    opacity: 0.9;
+}
+
+.error-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.error-page-img {
+    width: 320px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30vh;
+    pointer-events: none;
+}
+
+.error-page-topic {
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.image-container {
+    width: 160px;
+    height: 160px;
+    border: 0.5px solid #000;
+    border-radius: 50%;
+    /* cursor: pointer; */
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.image-container:hover img {
+    opacity: 0.3;
+}
+
+.image-container:hover::after {
+    opacity: 1;
+}
+
+.image-container:after {
+    content: "Upload Profile Image here";
+    position: absolute;
+    width: 100px;
+    text-align: center;
+    color: #000;
+    top: 40%;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.image-container img {
+    border-radius: 50%;
+    /* pointer-events: none; */
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.image-upload input {
+    display: none;
+}
+
+.nav-profile-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.nav-profile-img {
+    width: 45px;
+    height: 45px!important;
+    border-radius: 50%!important;
+    margin-right: 20px;
+}
+
+.nav-menu-toggler {
+    background: unset!important;
+    color: #FFF!important;
+    padding: 6px 8px!important;
+}
+
+.nav-menu-toggler .MuiButton-label {
+    white-space: nowrap; 
+    width: 122px; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.nav-profile-container .MuiListItem-button a {
+    display: block;
+    width: 100%;
+}
+
+.DashboardContent .default-btn {
+    background: unset!important;
+    padding: 12px;
+}
+
+.dashboard-sidenav-container .MuiListItem-button.active {
+    background: rgb(0,0,0, 0.1);
+    color: #3f51b5;
+}
+
+.dashboard-sidenav-container .MuiListItem-button.active svg {
+    color: #3f51b5;
+}
+
+.dashboard-bottom-nav a > button {
+    font-size: 12px;
+    background: unset!important;
+    padding: 6px 12px 8px;
+    color: rgba(0, 0, 0, 0.54);
+    text-transform: capitalize;
+}
+
+.dashboard-bottom-nav a:hover > button {
+    color: #3f51b5;
+}
+
+.data-table-button .MuiTablePagination-actions button,
+.data-theader-button {
+    color: rgba(0, 0, 0, 0.54)!important;
+    padding: 12px!important;
+    overflow: visible!important;
+    font-size: 1.5rem!important;
+    text-align: center!important;
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms!important;
+    border-radius: 50%!important;
+    text-decoration: none!important;
+    background-color: transparent!important;
+}
+
+.dashboard-dialog .MuiDialog-scrollPaper .MuiInputBase-input {
+    color: currentColor;
+    width: 100%;
+    border: 0;
+    height: 1.1876em;
+    margin: 0;
+    display: block;
+    padding: 6px 0 7px;
+    min-width: 0;
+    background: none;
+    box-sizing: content-box;
+}
+
+.dashboard-dialog .MuiButton-root.MuiButton-text {
+    padding: 6px 8px;
+    /* color: rgba(0, 0, 0, 0.87); */
+    box-sizing: border-box;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    background-color: transparent;
+}
+
+.dashboard-tab-container button,
+.dashboard-tab-container button:focus,
+.dashboard-tab-container button:hover {
+    padding: 6px 12px;
+    overflow: hidden;
+    position: relative;
+    font-size: 0.875rem;
+    max-width: 264px;
+    min-width: 72px;
+    box-sizing: border-box;
+    min-height: 48px;
+    text-align: center;
+    flex-shrink: 0;
+    font-family: marcellus,Sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    white-space: normal;
+    text-transform: capitalize;
+    background-color: transparent;
+    color: #FFF;
+}
+
+.dashboard-tab-container .MuiTabs-flexContainer {
+    overflow: auto;
+}
+
+.dashboard-tab-container .MuiTabs-flexContainer::-webkit-scrollbar {
+    height: 0px;
+}
+
+.dashboard-tab-container .MuiTabs-flexContainer::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, #FFF);
+    border-radius: 6px;
+}
+
+.restaurant-form-stepper .MuiStepButton-horizontal,
+.restaurant-form-stepper .MuiStepButton-horizontal:focus,
+.restaurant-form-stepper .MuiStepButton-horizontal:hover {
+    width: 100%;
+    margin: -24px -16px;
+    padding: 24px 16px;
+    box-sizing: content-box;
+    background: transparent;
+    text-transform: unset;
+}
+
+.restaurant-form-navigator button,
+.restaurant-form-navigator button:hover,
+.restaurant-form-navigator button:focus {
+    color: #fff;
+    background-color: #3f51b5;
+    padding: 6px 16px;
+    font-size: 0.875rem;
+    min-width: 64px;
+    box-sizing: border-box;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-family: marcellus,Sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.StaffReservationForm input {
+    color: currentColor;
+    width: 100%;
+    border: 0;
+    height: 1.1876em;
+    margin: 0;
+    display: block;
+    padding: 6px 0 7px;
+    min-width: 0;
+    background: none;
+    box-sizing: content-box;
+}
+
+.RestaurantSeating {
+    text-align: center;
+}
+
+.seating-map {
+    width: 500px;
+}
+
+.seating-map input {
+    width: 25px;
+    height: 25px;
+}
+
+.restaurant-list-description {
+    display: -webkit-box;
+    /* max-width: 200px; */
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.pagination-container {
+    display: flex;
+}
+
+.pagination-container button {
+    padding: 0 6px;
+    font-size: 0.875rem;
+    border-radius: 16px;
+    background-color: transparent;
+}
+
+.RestaurantContent .MuiPickersDay-daySelected {
+    background-color: #FFD800!important;
+}
+
+.RestaurantContent .MuiDateInputs input {
+    box-sizing: content-box;
+    color: currentColor;
+    padding: 6px 0 7px;
+    border: transparent;
+    background: transparent;
+}
+
+.MuiPickersModal-dialogRoot button {
+    padding: 6px 8px;
+    font-size: 0.875rem;
+    color: rgba(0, 0, 0, 0.87);
+    background-color: transparent;
+}
+
+.reservation-caption,
+.reserved-seats-container {
+    text-align: left;
+}
+
+@-moz-keyframes swing {
+    50% {
+        transform: rotate(-3deg);
+    }
+    }
+@-webkit-keyframes swing {
+    50% {
+        transform: rotate(-3deg);
+    }
+}
+@-o-keyframes swing {
+    50% {
+        transform: rotate(-3deg);
+    }
+}
+@keyframes swing {
+    50% {
+        transform: rotate(-3deg);
+    }
+}
+@-moz-keyframes steamLarge {
+    0% {
+        stroke-dashoffset: 13;
+        opacity: 0.6;
+    }
+    100% {
+        stroke-dashoffset: 39;
+        opacity: 0;
+    }
+}
+@-webkit-keyframes steamLarge {
+    0% {
+        stroke-dashoffset: 13;
+        opacity: 0.6;
+    }
+    100% {
+        stroke-dashoffset: 39;
+        opacity: 0;
+    }
+}
+@-o-keyframes steamLarge {
+    0% {
+        stroke-dashoffset: 13;
+        opacity: 0.6;
+    }
+    100% {
+        stroke-dashoffset: 39;
+        opacity: 0;
+    }
+}
+@keyframes steamLarge {
+    0% {
+        stroke-dashoffset: 13;
+        opacity: 0.6;
+    }
+    100% {
+        stroke-dashoffset: 39;
+        opacity: 0;
+    }
+}
+@-moz-keyframes steamSmall {
+    10% {
+        stroke-dashoffset: 9;
+        opacity: 0.6;
+    }
+    80% {
+        stroke-dashoffset: 27;
+        opacity: 0;
+    }
+    100% {
+        stroke-dashoffset: 27;
+        opacity: 0;
+    }
+}
+@-webkit-keyframes steamSmall {
+    10% {
+        stroke-dashoffset: 9;
+        opacity: 0.6;
+    }
+    80% {
+        stroke-dashoffset: 27;
+        opacity: 0;
+    }
+    100% {
+        stroke-dashoffset: 27;
+        opacity: 0;
+    }
+}
+@-o-keyframes steamSmall {
+    10% {
+        stroke-dashoffset: 9;
+        opacity: 0.6;
+    }
+    80% {
+        stroke-dashoffset: 27;
+        opacity: 0;
+    }
+    100% {
+        stroke-dashoffset: 27;
+        opacity: 0;
+    }
+}
+@keyframes steamSmall {
+    10% {
+        stroke-dashoffset: 9;
+        opacity: 0.6;
+    }
+    80% {
+        stroke-dashoffset: 27;
+        opacity: 0;
+    }
+    100% {
+        stroke-dashoffset: 27;
+        opacity: 0;
+    }
+}
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.MuiFormLabel-root.Mui-focused {
+    /* color: #FFD800!important; */
+    color: #000!important;
+}
+
+.MuiFormLabel-root.Mui-error {
+    color: #f44336!important;
+}
+
+.MuiInput-underline:after {
+    /* border-bottom: 2px solid #FFD800!important; */
+    border-bottom: 2px solid #000!important;
+}
+
+@media screen and (max-width: 1024px) {
+    .nav-profile-container {
+        position: absolute;
+        justify-content: unset;
+        top: -22px;
+        right: 0;
+    }
+}
+
